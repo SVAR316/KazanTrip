@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/main.scss'
+
+// imgs
+import logo from './images/logo.svg'
+import vk from './images/vk.svg'
+import insta from './images/instagram.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+
+        <div>
+            <div className={"container"}>
+                <p>Чем заняться в Казани</p>
+            </div>
+            <div className={"container"}>
+                <div className={"form"}>
+                    <div className={"form-content"}>
+                        <p className={"form-content__title"}>Заполните форму и мы с вами свяжемся</p>
+                        <div style={{marginTop:61}}>
+                            <input className={"form-content__input"} placeholder={"Имя"}/>
+                        </div>
+                        <div style={{marginTop:38}}>
+                            <input className={"form-content__input"} placeholder={"E-mail"}/>
+                        </div>
+                        <div className={"form-content__button"}>
+                            <a href={"https://www.youtube.com/watch?v=YAdL4iobqwE"}>Отправить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={"container"}>
+                <div className={"footer"}>
+                    <div className={"footer-upper"}>
+                        <div className={"footer-upper__left"}>
+                            <img alt={"logo"} src={logo}/>
+                            <a>KazanTrip</a>
+                        </div>
+                        <div className={"footer-upper__right"}>
+                            <a>Вопросы</a>
+                            <a>О нас</a>
+                        </div>
+                    </div>
+                    <div className={"footer-line"}></div>
+                    <div className={"footer-down"}>
+                        <div className={"footer-down__left"}>
+                            <p>© Все права защищены</p>
+                        </div>
+                        <div className={"footer-down__right"}>
+                            <a><img alt={"vk.com"} src={vk}/></a>
+                            <a><img src={insta} alt={"instagram"}/></a>
+                            <a href={"mailto:kazanTrip@gmail.com"}>kazanTrip@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default App
