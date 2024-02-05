@@ -11,7 +11,7 @@ import houseYshahova from './images/houseYshahova.png'
 import nationLibrary from './images/nationLibrary.png'
 import restaurant from './images/restaurant.png'
 import kazan from './images/kazan.png'
-import arrowRightLong from './images/arrowRightLong.svg'
+import arrowRightLong from './images/arrowrightLong.svg'
 import location from './images/location.svg'
 
 function App() {
