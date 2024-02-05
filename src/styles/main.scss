@@ -395,21 +395,32 @@ body {
 }
 
 
-.places{
+.places {
   margin-top: 217px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 
-  &-upper{
+  &-down {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
 
-    &__text-upper{
+  &-upper {
+
+    display: flex;
+    gap: 118px;
+    align-items: center;
+
+    &__text-upper {
       font-family: 'Kanit', sans-serif;
       font-weight: 600;
       font-size: 40px;
       color: black;
     }
-    &__text-down{
+
+    &__text-down {
       font-family: 'Kanit', sans-serif;
       font-weight: 600;
       font-size: 40px;
@@ -417,76 +428,127 @@ body {
       display: flex;
       align-items: center;
 
-      & img{
-        margin-left:28px;
+      & img {
+        margin-left: 28px;
       }
+    }
+
+    &__cards {
+      display: flex;
+      gap: 20px;
     }
   }
 
-  &-card{
+  &-card {
+    width: 346px;
+    height: 346px;
 
+    &__down {
+      background-color: rgba(0, 0, 0, 0.5);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-top: -120px;
+      position: relative;
+      padding: 20px 0 20px 40px;
+      z-index: 1;
+
+      & p {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 500;
+        color: #FFF;
+
+        &:first-child {
+          font-size: 20px;
+        }
+
+        &:last-child {
+          margin-top: 20px;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+
+          & img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
   }
 }
 
 
 .form {
-  background-image: url("../images/bgForm.png");
-  width: 100%;
-  height: 912px;
+  margin-top: 613px;
+  background-color: #E1EDFF;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  &-content {
-    border-radius: 130px;
-    width: 1196px;
-    height: 739px;
-    background-color: #E1EDFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &-right {
+    width: 100%;
+    max-width: 613px;
+    margin-right: 99px;
 
     &__title {
-      margin-top: 104px;
-      font-size: 50px;
+      font-family: 'Inter', sans-serif;
       font-weight: 500;
-      width: 587px;
-      font-family: "Inter", sans-serif;
+      font-size: 50px;
+      margin-top: 106px;
     }
 
-    &__input {
-      border: 1px solid #D4D4D4;
-      background-color: #FFF;
-      border-radius: 100px;
-      width: 570px;
-      height: 87px;
+    &__subtitle {
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 30px;
+      color: black;
+      margin-top: 40px;
+      width: 100%;
+      max-width: 460px;
+    }
 
-      &::placeholder {
+    &__inputs {
+      margin-top: 84px;
+      display: flex;
+      flex-direction: column;
+      gap: 38px;
+
+      & input{
+        max-width: 570px;
+        width: 100%;
+        height: 87px;
+        border-radius: 100px;
+        border: 1px solid #D4D4D4;
+        background-color: #FFF;
+        color: black;
+        padding: 30px;
         font-family: "Inter", sans-serif;
-        font-size: 22px;
         font-weight: 500;
-        color: #8D8D8D;
-        padding: 30px 0 30px 30px;
+        font-size: 22px;
+         &::placeholder{
+           color: #8D8D8D;
+         }
+
+        &:focus, &:target, &:hover{
+          outline: none;
+        }
       }
     }
 
-
     &__button {
-      width: 587px;
       margin-top: 50px;
-      display: flex;
-      justify-content: flex-start;
 
-      & a {
-        background-color: #FFF;
+      & button{
         border-radius: 49px;
         border: 1px solid #D4D4D4;
-        padding: 20px 40px;
-        font-family: "Inter", sans-serif;
-        font-weight: 600;
-        font-size: 24px;
+        width: 210px;
+        height: 69px;
         color: black;
-        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        background-color: white;
       }
     }
   }
