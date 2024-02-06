@@ -13,13 +13,23 @@ import restaurant from './images/restaurant.png'
 import kazan from './images/kazan.png'
 import arrowRightLong from './images/arrowrightLong.svg'
 import location from './images/location.svg'
+import locationBlack from './images/locationBlack.png'
+import pointC from  './images/pointC.png'
+import cost from './images/cost.png'
 import cartLounge from './images/cartLounge.png'
-import meraKitchen from  './images/meraKitchen.png'
-import azu from  './images/azu.png'
+import meraKitchen from './images/meraKitchen.png'
+import azu from './images/azu.png'
 import artel from './images/artel.png'
 import vanGofh from './images/vanGofh.png'
 import cheeseria from './images/cheeseria.png'
 import formCloud from './images/cloudForm.png'
+import alMardjani from './images/alMardjani.png'
+import apanaevDown from './images/apanaevDown.png'
+import apanaevLeft from './images/apanaevLeft.png'
+import apanaevRight from './images/apanaevRight.png'
+import zakabanUpper from './images/zakabanUpper.png'
+import zakabanDown from './images/zakabanDown.png'
+import artplay from './images/artplay.png'
 
 function App() {
 
@@ -140,52 +150,53 @@ function App() {
                     <div className={'places-upper'}>
                         <div>
                             <p className={'places-upper__text-upper'}>Интересные кафешки для</p>
-                            <p className={'places-upper__text-down'}>вашего настроения <img src={arrowRightLong} alt={'arrow left'}/></p>
+                            <p className={'places-upper__text-down'}>вашего настроения <img src={arrowRightLong}
+                                                                                            alt={'arrow left'}/></p>
                         </div>
                         <div className={'places-upper__cards'}>
                             <div className={'places-card'}>
-                                <img src={cartLounge} alt={'cart lounge'} />
+                                <img src={cartLounge} alt={'cart lounge'}/>
                                 <div className={'places-card__down'}>
                                     <p>CART Lounge</p>
-                                    <p><img src={location} alt={'location'} />ул. 2-я Юго-Западная д.3А</p>
+                                    <p><img src={location} alt={'location'}/>ул. 2-я Юго-Западная д.3А</p>
                                 </div>
                             </div>
                             <div className={'places-card'}>
-                                <img src={meraKitchen} alt={'cart lounge'} />
+                                <img src={meraKitchen} alt={'cart lounge'}/>
                                 <div className={'places-card__down'}>
                                     <p>Mera kitchen</p>
-                                    <p><img src={location} alt={'location'} />ул. Разведчика Ахмерова, 7</p>
+                                    <p><img src={location} alt={'location'}/>ул. Разведчика Ахмерова, 7</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className={'places-down'}>
                         <div className={'places-card'}>
-                            <img src={azu} alt={'cart lounge'} />
+                            <img src={azu} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>AZU</p>
-                                <p><img src={location} alt={'location'} />ул. Декабристов, 8</p>
+                                <p><img src={location} alt={'location'}/>ул. Декабристов, 8</p>
                             </div>
                         </div>
                         <div className={'places-card'}>
-                            <img src={artel} alt={'cart lounge'} />
+                            <img src={artel} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>ARTEL</p>
-                                <p><img src={location} alt={'location'} />ул. Муштари, 18</p>
+                                <p><img src={location} alt={'location'}/>ул. Муштари, 18</p>
                             </div>
                         </div>
                         <div className={'places-card'}>
-                            <img src={vanGofh} alt={'cart lounge'} />
+                            <img src={vanGofh} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>Van Gofh</p>
-                                <p><img src={location} alt={'location'} />п. Ибрагимова, 56А, этаж 3</p>
+                                <p><img src={location} alt={'location'}/>п. Ибрагимова, 56А, этаж 3</p>
                             </div>
                         </div>
                         <div className={'places-card'}>
-                            <img src={cheeseria} alt={'cart lounge'} />
+                            <img src={cheeseria} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>Cheeseria</p>
-                                <p><img src={location} alt={'location'} />ул. Мусы Джалиля, 8/44</p>
+                                <p><img src={location} alt={'location'}/>ул. Мусы Джалиля, 8/44</p>
                             </div>
                         </div>
                     </div>
@@ -193,25 +204,134 @@ function App() {
             </div>
 
             <div className={'container'}>
-                <p>Прогулка по татарским слободам</p>
+                <p className={'slob__title'}>Прогулка по татарским слободам</p>
 
+                <p className={'slob__desc'}>Почему Розовая мечеть на деле голубая, Голубая — почти белая, а Белая и
+                    вовсе зеленая</p>
+                <div className={'slob__line'}></div>
+                <div className={'slob-content'}>
+                    <img alt={'arrow'} src={arrowDown}/>
+                    <p>Новую и Старую Татарские слободы Казани рекомендуют туристам во всех путеводителях: во-первых,
+                        вокруг озера Кабан просто очень красиво, во-вторых, местные мечети — едва ли не единственные
+                        сохранившиеся памятники монументальной татарской архитектуры в Казани.</p>
+                </div>
             </div>
 
-            <div className={"container"}>
-                <p>Чем заняться в Казани</p>
+            <div>
+                <div className={'container'}>
+                    <p className={'mosque__title'}>Мечеть Аль-Марджани</p>
+                    <p className={'mosque__subtitle'}>ее также называют Первая соборная, Старокаменная, Юнусовская</p>
+                </div>
+                <div className={'mosque'}>
+                    <div className={'container'}>
+                        <div className={'mosque-content'}>
+                            <div className={'mosque-content__left'}>
+                                <img alt={'alMardjani'} src={alMardjani}/>
+                                <p>ул. К. Насыри, 17</p>
+                            </div>
+                            <div className={'mosque-content__right'}>
+                                <p>Мечеть построена в традициях татарской средневековой архитектуры — с минаретом на
+                                    крыше.</p>
+                                <p>Фасад и интерьер оформлены в духе русского барокко — кажется, что архитекторы
+                                    использовали столько элементов декора, на сколько хватило денег.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div>
+                <div className={'container'}>
+                    <p className={'apanaev__title'}>Апанаевская мечеть</p>
+                    <p className={'apanaev__subtitle'}>ее также называют Вторая соборная, Байская, Пещерная</p>
+                </div>
+                <div className={'apanaev'}>
+                    <div className={'container'}>
+                        <div className={'apanaev-content'}>
+                            <div className={'apanaev-content__left'}>
+                                <p>Апанаевская мечеть строилась параллельно с Аль-Марджани, поэтому они похожи, хотя
+                                    здесь архитектор предпочел украсить фасад миниатюрными элементами. Перфекционисты
+                                    будут довольны — мечеть можно поделить на две равные половины точно посередине, и
+                                    одна часть будет полностью симметрична другой. Из-за усеченных колонн на фронтальной
+                                    части здания кажется, будто оно немного изогнуто</p>
+                                <p>В советский период мечеть была закрыта: ТатЦИК постановил разрушить минарет и
+                                    надстроить один этаж для детского сада. В 1995 году здание снова передали в руки
+                                    мусульманской общины, а к Универсиаде полностью отреставрировали.</p>
+                            </div>
+                            <div className={'apanaev-content__right'}>
+                                <div>
+                                    <img alt={'apanaevLeft'} src={apanaevLeft}/>
+                                    <img alt={'apanaevRight'} src={apanaevRight}/>
+                                </div>
+                                <img alt={'apanaevDown'} src={apanaevDown}/>
+                                <p>ул. К. Насыри, 27</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div className={'container'}>
+                    <p className={'zakaban__title'}>Закабанная мечеть</p>
+                    <p className={'zakaban__subtitle'}>ее также называют мечеть 1000-летия принятия ислама,
+                        Юбилейная</p>
+                </div>
+                <div className={'zakaban'}>
+                    <div className={'container'}>
+                        <div className={'apanaev-content'}>
+                            <div className={'apanaev-content__left'}>
+                                <p>Если урезать минарет до основания, то Закабанная мечеть будет похожа на дом в Риге
+                                    или Калининграде: прямоугольные формы с угловатыми карнизами и выпуклыми окнами
+                                    почти во всю высоту стен.</p>
+                                <p>Разрешение на постройку мечети в 1926 году давал лично Иосиф Сталин, который тогда
+                                    был наркомом по делам национальностей. В тот год Казань отмечала тысячелетие
+                                    принятия ислама. После открытия мечеть проработала одну неделю. Окончательно ее
+                                    закрыли в 1930 году.</p>
+                            </div>
+                            <div className={'zakaban-content__right'}>
+                                <img alt={'zakaban image'} src={zakabanUpper}/>
+                                <img alt={'zakaban image'} src={zakabanDown}/>
+                                <p>ул. Х. Такташа, 26</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div className={'container'}>
+                    <p className={'zakaban__title'}>Необычные места Казани</p>
+                </div>
+                <div className={'zakaban'}>
+                    <div className={'container'}>
+                        <div className={'apanaev-content'}>
+                            <div className={'apanaev-content__left'}>
+                                <p>Мультимедийные выставки с «ожившими» полотнами</p>
+                                <p>В «Артплее» проходят мультимедийные выставки, где демонстрируют произведения художников в формате «оживших» полотен. При помощи технологии Cinema 360 изображения проецируют на стены и пол, их сопровождает музыка и голос диктора.</p>
+                                <p><img alt={'location'} src={locationBlack} /> ул. Пушкина, 17</p>
+                                <p><img alt={'point'} src={pointC} /> с 10:00 до 21:00, в пятницу и субботу — до 22:00</p>
+                                <p><img alt={'cost'} src={cost} /> от 600 ₽</p>
+                            </div>
+                            <div className={'zakaban-content__right'}>
+                                <p>Центр цифрового искусства Artplay Media</p>
+                                <img alt={'artplay'} src={artplay} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div className={'container'}>
                 <div className={'form'}>
                     <div>
-                        <img src={formCloud} alt={'cloud'} />
+                        <img src={formCloud} alt={'cloud'}/>
                     </div>
                     <div className={'form-right'}>
                         <p className={'form-right__title'}>Путеводитель по Казани</p>
                         <p className={'form-right__subtitle'}>Заполните форму и мы с вами свяжемся</p>
                         <div className={'form-right__inputs'}>
-                            <input placeholder={'Имя'} />
-                            <input placeholder={'E-mail'}  />
+                            <input placeholder={'Имя'}/>
+                            <input placeholder={'E-mail'}/>
                         </div>
                         <div className={'form-right__button'}>
                             <button>Отправить</button>

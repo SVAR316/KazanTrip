@@ -394,6 +394,217 @@ body {
   }
 }
 
+.slob {
+
+  &__title {
+    margin-top: 180px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: black;
+    text-align: end;
+  }
+
+  &__desc {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    color: black;
+    width: 705px;
+    margin-top: 100px;
+  }
+
+  &__line {
+    height: 1px;
+    width: 149px;
+    background-color: black;
+    margin-top: 55px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 90px;
+
+    & p {
+      width: 834px;
+      font-family: "Inter", sans-serif;
+      font-size: 34px;
+      font-weight: 500;
+      color: black;
+    }
+  }
+}
+
+.mosque {
+  background-color: #E1EDFF;
+  width: 100%;
+  height: 427px;
+  margin-top: 232px;
+
+  &__title {
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-top: 180px;
+  }
+
+  &__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    text-align: end;
+    margin-top: 70px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    gap: 136px;
+
+    &__left {
+      margin-top: -110px;
+      display: flex;
+      width: 712px;
+      flex-direction: column;
+      gap: 10px;
+
+      & p {
+        color: #303030;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+
+    &__right {
+      margin-top: 103px;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 26px;
+      color: black;
+      width: 600px;
+
+      & p {
+        font-weight: 500;
+
+        &:last-child {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+
+.apanaev {
+  background-color: #E1EDFF;
+  width: 100%;
+  height: 697px;
+  margin-top: 273px;
+
+  &__title {
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-top: 250px;
+    text-align: end;
+  }
+
+  &__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    margin-top: 70px;
+  }
+
+  &-content {
+    display: flex;
+    gap: 142px;
+
+    &__right {
+      margin-top: -140px;
+
+      & div {
+        display: flex;
+        gap: 20px;
+      }
+
+      & img {
+        margin-top: 20px;
+      }
+
+      & p {
+        margin-top: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        color: #303030;
+      }
+    }
+
+    &__left {
+      margin-top: 100px;
+
+      & p {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        color: black;
+
+        &:last-child {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+}
+
+.zakaban {
+  background-color: #E1EDFF;
+  width: 100%;
+  height: 697px;
+  margin-top: 283px;
+
+  &__title {
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-top: 342px;
+  }
+
+  &__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+    margin-top: 70px;
+    text-align: end;
+  }
+
+  &-content {
+
+    &__right {
+      margin-top: -100px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      & p {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        color: #303030;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
 
 .places {
   margin-top: 217px;
@@ -514,7 +725,7 @@ body {
       flex-direction: column;
       gap: 38px;
 
-      & input{
+      & input {
         max-width: 570px;
         width: 100%;
         height: 87px;
@@ -526,11 +737,12 @@ body {
         font-family: "Inter", sans-serif;
         font-weight: 500;
         font-size: 22px;
-         &::placeholder{
-           color: #8D8D8D;
-         }
 
-        &:focus, &:target, &:hover{
+        &::placeholder {
+          color: #8D8D8D;
+        }
+
+        &:focus, &:target, &:hover {
           outline: none;
         }
       }
@@ -539,7 +751,7 @@ body {
     &__button {
       margin-top: 50px;
 
-      & button{
+      & button {
         border-radius: 49px;
         border: 1px solid #D4D4D4;
         width: 210px;
