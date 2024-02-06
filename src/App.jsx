@@ -14,7 +14,7 @@ import kazan from './images/kazan.png'
 import arrowRightLong from './images/arrowrightLong.svg'
 import location from './images/location.svg'
 import locationBlack from './images/locationBlack.png'
-import pointC from  './images/pointC.png'
+import pointC from './images/pointC.png'
 import cost from './images/cost.png'
 import cartLounge from './images/cartLounge.png'
 import meraKitchen from './images/meraKitchen.png'
@@ -30,6 +30,7 @@ import apanaevRight from './images/apanaevRight.png'
 import zakabanUpper from './images/zakabanUpper.png'
 import zakabanDown from './images/zakabanDown.png'
 import artplay from './images/artplay.png'
+import whiteFlowers from './images/whiteFlowers.png'
 
 function App() {
 
@@ -299,27 +300,52 @@ function App() {
             </div>
             <div>
                 <div className={'container'}>
-                    <p className={'zakaban__title'}>Необычные места Казани</p>
+                    <p className={'artplay__title'}>Необычные места Казани</p>
                 </div>
-                <div className={'zakaban'}>
+                <div className={'artplay'}>
                     <div className={'container'}>
-                        <div className={'apanaev-content'}>
-                            <div className={'apanaev-content__left'}>
-                                <p>Мультимедийные выставки с «ожившими» полотнами</p>
-                                <p>В «Артплее» проходят мультимедийные выставки, где демонстрируют произведения художников в формате «оживших» полотен. При помощи технологии Cinema 360 изображения проецируют на стены и пол, их сопровождает музыка и голос диктора.</p>
-                                <p><img alt={'location'} src={locationBlack} /> ул. Пушкина, 17</p>
-                                <p><img alt={'point'} src={pointC} /> с 10:00 до 21:00, в пятницу и субботу — до 22:00</p>
-                                <p><img alt={'cost'} src={cost} /> от 600 ₽</p>
+                        <div className={'artplay-content'}>
+                            <div className={'artplay-content__left'}>
+                                <p className={'artplay-content__left-title'}>Мультимедийные выставки с «ожившими»
+                                    полотнами</p>
+                                <p className={'artplay-content__left-desc'}>В «Артплее» проходят мультимедийные
+                                    выставки, где демонстрируют произведения художников в формате «оживших» полотен. При
+                                    помощи технологии Cinema 360 изображения проецируют на стены и пол, их сопровождает
+                                    музыка и голос диктора.</p>
+                                <p className={'artplay-content__left-point-first'}><img alt={'location'}
+                                                                                        src={locationBlack}/> ул.
+                                    Пушкина, 17</p>
+                                <p className={'artplay-content__left-point'}><img alt={'point'} src={pointC}/> с 10:00
+                                    до 21:00, в пятницу и субботу — до 22:00</p>
+                                <p className={'artplay-content__left-point'}><img alt={'cost'} src={cost}/> от 600 ₽</p>
                             </div>
-                            <div className={'zakaban-content__right'}>
+                            <div className={'artplay-content__right'}>
                                 <p>Центр цифрового искусства Artplay Media</p>
-                                <img alt={'artplay'} src={artplay} />
+                                <img alt={'artplay'} src={artplay}/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div className={'container'}>
+                <div className={'flowers'}>
+                    <img alt={'white flowers'} src={whiteFlowers}/>
+                    <div className={'flowers-right'}>
+                        <p className={'flowers-right__title'}>Бульвар «Белые цветы»</p>
+                        <div className={'flowers-right__subtitle'}>
+                            <p>Бульвар с классным стрит-артом и детскими площадками</p>
+                        </div>
+                        <p className={'flowers-right__desc'}>
+                            Это место посвящено роману «Ак чәчәкләр» — «Белые цветы». В честь его автора Абдурахмана Абсалямова названа улица, вдоль которой расположен 700-метровый бульвар.
+                        </p>
+                        <p className={'flowers-right__point'}><img alt={'location'} src={locationBlack}/> ул.
+                            Пушкина, 17</p>
+                        <p className={'flowers-right__other'}><img alt={'point'} src={pointC}/> круглосуточно</p>
+                        <p className={'flowers-right__other'}><img alt={'cost'} src={cost}/> бесплатно</p>
+                    </div>
+                </div>
+            </div>
 
             <div className={'container'}>
                 <div className={'form'}>
