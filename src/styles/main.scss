@@ -708,13 +708,15 @@ body {
       font-size: 45px;
       text-align: end;
     }
-    &__subtitle{
+
+    &__subtitle {
       width: 100%;
       display: flex;
       justify-content: end;
       margin-top: 50px;
       padding-right: 37px;
-      & p{
+
+      & p {
         font-family: "Inter", sans-serif;
         font-weight: 500;
         font-size: 24px;
@@ -722,33 +724,228 @@ body {
         text-align: start;
       }
     }
-    &__desc{
+
+    &__desc {
       font-family: "Inter", sans-serif;
       font-size: 24px;
       color: black;
       margin-top: 49px;
     }
 
-    &__point{
+    &__point {
       margin-top: 49px;
       font-family: "Inter", sans-serif;
       font-weight: 500;
       font-size: 20px;
       display: flex;
       align-items: center;
-      & img{
+
+      & img {
         margin-right: 15px;
       }
     }
-    &__other{
+
+    &__other {
       margin-top: 20px;
       font-family: "Inter", sans-serif;
       font-weight: 500;
       font-size: 20px;
       display: flex;
       align-items: center;
-      & img{
+
+      & img {
         margin-right: 15px;
+      }
+    }
+  }
+}
+
+.park {
+  background-color: #E1EDFF;
+  margin-top: 657px;
+  width: 100%;
+
+  &__image{
+    position: absolute;
+    right: 0;
+    margin-top: -340px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 291px;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      margin-top: 280px;
+      width: 565px;
+
+      &-title {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        color: black;
+      }
+
+      &-subtitle {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        color: black;
+        margin-top: 76px;
+        padding-bottom: 243px;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      margin-top: 280px;
+      width: 587px;
+
+      &-desc {
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        color: black;
+      }
+
+      &-address {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: black;
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+
+        & img{
+          margin-right: 15px;
+        }
+      }
+      &-point {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: black;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        & img{
+          margin-right: 15px;
+        }
+      }
+      &-info{
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        color: black;
+        margin-top: 40px;
+
+        & a{
+          text-decoration: underline;
+          color: black;
+          font-family: "Inter", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+.popular{
+
+  &__title{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: black;
+    margin-top: 151px;
+  }
+  &-content{
+    margin-top: 100px;
+    height: 754px;
+  }
+}
+
+.event{
+  margin-top: 150px;
+  &__title{
+    font-family: "Kanit", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+  }
+  &-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 100px;
+  }
+
+  &-content-revers{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 289px;
+
+    & div{
+      display: flex;
+    }
+  }
+
+  &-item-revers{
+    display: grid !important;
+    align-items: center;
+    gap: 70px;
+    grid-template-columns: 650px 420px;
+    justify-content: end;
+  }
+
+  &-item{
+    display: grid;
+    align-items: center;
+    gap: 70px;
+    grid-template-columns: 650px 250px;
+    & div{
+      display: flex;
+    }
+
+    &__image{
+      margin-right: 72px;
+    }
+
+    &__desc{
+      width: 439px;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 28px;
+      color: black;
+    }
+    &__info{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 25px;
+      & p{
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        color: black;
+      }
+      & div{
+        display: flex;
+        gap: 20px;
+        & p{
+          font-weight: 400;
+          font-size: 20px;
+          &:first-child{
+            width: 200px;
+          }
+          &:last-child{
+          }
+        }
       }
     }
   }
@@ -998,6 +1195,22 @@ body {
         }
       }
     }
+  }
+}
+
+.line{
+  &-right{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    margin-top: -1080px;
+    width: 100%;
+  }
+  &-left{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-top: -502px;
   }
 }
 

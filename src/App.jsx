@@ -31,6 +31,10 @@ import zakabanUpper from './images/zakabanUpper.png'
 import zakabanDown from './images/zakabanDown.png'
 import artplay from './images/artplay.png'
 import whiteFlowers from './images/whiteFlowers.png'
+import itPark from './images/itPark.png'
+import star from './images/Star.svg'
+import linesRight from './images/linesRight.png'
+import linesLeft from './images/linesLeft.png'
 
 function App() {
 
@@ -142,8 +146,12 @@ function App() {
                 </div>
             </div>
 
+            <img className={'line-left'} src={linesLeft} alt={'lines left'} />
             <div className={'container'}>
-                <p>Популярные места</p>
+                <p className={'popular__title'}>Популярные места</p>
+                <div className={'popular-content'}>
+
+                </div>
             </div>
 
             <div className={'container'}>
@@ -337,12 +345,144 @@ function App() {
                             <p>Бульвар с классным стрит-артом и детскими площадками</p>
                         </div>
                         <p className={'flowers-right__desc'}>
-                            Это место посвящено роману «Ак чәчәкләр» — «Белые цветы». В честь его автора Абдурахмана Абсалямова названа улица, вдоль которой расположен 700-метровый бульвар.
+                            Это место посвящено роману «Ак чәчәкләр» — «Белые цветы». В честь его автора Абдурахмана
+                            Абсалямова названа улица, вдоль которой расположен 700-метровый бульвар.
                         </p>
                         <p className={'flowers-right__point'}><img alt={'location'} src={locationBlack}/> ул.
                             Пушкина, 17</p>
                         <p className={'flowers-right__other'}><img alt={'point'} src={pointC}/> круглосуточно</p>
                         <p className={'flowers-right__other'}><img alt={'cost'} src={cost}/> бесплатно</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={'park'}>
+                <img className={'park__image'} alt={'it park'} src={itPark}/>
+                <div className={'container'}>
+                    <div className={'park-content'}>
+                        <div className={'park-content__left'}>
+                            <p className={'park-content__left-title'}>ИТ-парк имени Башира Рамеева</p>
+                            <p className={'park-content__left-subtitle'}>Огромное здание с киберареной, аналоговой
+                                стеной для рисования и роботизированным роялем</p>
+                        </div>
+                        <div className={'park-content__right'}>
+                            <p className={'park-content__right-desc'}>Парк напоминает город в городе: внутри есть кафе,
+                                барбершоп, фитнес-зал, химчистка и коворкинги. Доступ в здание открыт для всех, а не
+                                только для сотрудников компаний-резидентов.</p>
+                            <p className={'park-content__right-address'}><img src={locationBlack} alt={'location'}/> ул.
+                                Спартаковская, 2</p>
+                            <p className={'park-content__right-point'}><img src={pointC} alt={'point'}/> круглосуточно
+                            </p>
+                            <p className={'park-content__right-point'}><img src={cost} alt={'cost'}/> ИТ-парк —
+                                бесплатно, киберарена — от 80 ₽ в час</p>
+                            <p className={'park-content__right-info'}>Если хотите попасть во все помещения, нужно
+                                записаться на экскурсию <a
+                                    href={'https://itpark.tech/uslugi-it-parka/ekskursii-po-it-parku-i-organizatsiya-vizitov-delegatsiy/'}>на
+                                    сайте</a> или
+                                информационной стойке парка.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={'container'}>
+                <div className={'event'}>
+                    <p className={'event__title'}>Чем заняться в Казани</p>
+                    <div className={'event-content'}>
+                        <div className={'event-item'}>
+                            <div>
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
+                                <div className={'event-item__info'}>
+                                    <p>С 25 декабря по 25 февраля</p>
+                                    <div>
+                                        <p>Стоимость билетов: 600 - 800 рублей</p>
+                                        <p>Адрес:<br/> улица Пушкина,17</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={'event-item__desc'}>Мультимедийная выставка — «Леонардо да Винчи. Тайна
+                                Гения»</p>
+                        </div>
+                        <div className={'event-item'}>
+                            <div>
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
+                                <div className={'event-item__info'}>
+                                    <p>27 и 28 января в 13:30</p>
+                                    <div>
+                                        <p>Стоимость билетов:
+                                            бесплатно</p>
+                                        <p>Адрес: <br/>
+                                            улица Академика Королёва,47</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={'event-item__desc'}>Мастер-класс: рисуем лавандовое поле маслом</p>
+                        </div>
+                        <div className={'event-item'}>
+                            <div>
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
+                                <div className={'event-item__info'}>
+                                    <p>7 февраля, среда, 19:00</p>
+                                    <div>
+                                        <p>Стоимость билетов:
+                                            от 1200 руб.</p>
+                                        <p>Адрес: <br/>
+                                            Татнефть-Арена</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={'event-item__desc'}>Cinema Medley: Hans Zimmer’s Universe
+                                Грандиозное симфоническое шоу саундтреков</p>
+                        </div>
+                    </div>
+                    <img className={'line-right'} src={linesRight} alt={'linesRight'}/>
+                    <div className={'event-content-revers'}>
+                        <div className={'event-item-revers'}>
+                            <div>
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
+                                <div className={'event-item__info'}>
+                                    <p>2 марта, суббота, 18:00</p>
+                                    <div>
+                                        <p>Стоимость билетов:
+                                            от 1200 руб.</p>
+                                        <p>Адрес: <br/>
+                                            Татнефть-Арена</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={'event-item__desc'}>Концерт Оркестр CAGMO. K-pop Symphony: BTS</p>
+                        </div>
+                        <div className={'event-item-revers'}>
+                            <div>
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
+                                <div className={'event-item__info'}>
+                                    <p>9 марта, суббота, 19:00</p>
+                                    <div>
+                                        <p>Стоимость билетов:
+                                            от 1200 руб.</p>
+                                        <p>Адрес: <br />
+                                            улица Академика Королёва,47</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={'event-item__desc'}>Концерт Аффинаж
+                                Общество с ограниченной ответственностью</p>
+                        </div>
+                        <div className={'event-item-revers'}>
+                            <div>
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
+                                <div className={'event-item__info'}>
+                                    <p>11 марта, понедельник, 19:00</p>
+                                    <div>
+                                        <p>Стоимость билетов:
+                                            от 1200 руб.</p>
+                                        <p>Адрес:<br />
+                                            КРК Пирамида</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p className={'event-item__desc'}>Concord Orchestra. Симфонические хиты. Властелин тьмы</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -365,7 +505,6 @@ function App() {
                     </div>
                 </div>
             </div>
-
             <div className={"container"}>
                 <div className={"footer"}>
                     <div className={"footer-upper"}>
