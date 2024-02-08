@@ -634,6 +634,14 @@ function App() {
                         </div>
                     </div>
                     <div className={"footer-line"}></div>
+                    <div className={'footer-mobile'}>
+                        <div>
+                            <a><img alt={"vk.com"} src={vk}/></a>
+                            <a><img src={insta} alt={"instagram"}/></a>
+                        </div>
+                        <a href={"mailto:kazanTrip@gmail.com"}>kazanTrip@gmail.com</a>
+                    </div>
+                    <p className={'footer-mobile__alright'}>© Все права защищены</p>
                     <div className={"footer-down"}>
                         <div className={"footer-down__left"}>
                             <p>© Все права защищены</p>
