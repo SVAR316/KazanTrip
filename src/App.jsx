@@ -44,7 +44,7 @@ function App() {
     return (
         <div>
             <div className={'header-mobile'}>
-                <a><img src={logo} alt={'logo'} />  KazanTrip</a>
+                <a><img src={logo} alt={'logo'}/> KazanTrip</a>
                 <button>
                     <div></div>
                     <div></div>
@@ -61,7 +61,7 @@ function App() {
                             <a href="">Популярное</a>
                         </div>
                         <a className={"header-content__right"}>
-                            <img src={logo} alt={'logo'} />
+                            <img src={logo} alt={'logo'}/>
                             KazanTrip
                         </a>
                     </div>
@@ -69,9 +69,9 @@ function App() {
             </div>
 
             <div className={'block-mobile'}>
-                <img className={'block-mobile__title'} src={kazanText} alt='kazan text' />
-                <div className={'block-mobile__bg'} ></div>
-                <img className={'block-mobile__arrow'} src={arrowDownWhite} alt='arrow' />
+                <img className={'block-mobile__title'} src={kazanText} alt='kazan text'/>
+                <div className={'block-mobile__bg'}></div>
+                <img className={'block-mobile__arrow'} src={arrowDownWhite} alt='arrow'/>
             </div>
 
             <div className={'carousel'}>
@@ -88,15 +88,15 @@ function App() {
                                 <p className={'slide-first__name'}>МЕЧЕТЬ КУЛ-ШАРИФ</p>
                             </div>
                             <div className={'slide-first__desc'}>
-                                <p>Символ столицы Татарстана и ее главный открыточный вид<br /> — мечеть Кул-Шариф</p>
+                                <p>Символ столицы Татарстана и ее главный открыточный вид<br/> — мечеть Кул-Шариф</p>
                                 <p>Здание мечети облицовано белым мрамором, купол и вершины минаретов имеют окраску
                                     бирюзового цвета. Фасад главного здания украшен бронзовыми металлическими надписями
                                     арабской вязью</p>
                             </div>
-                            <img className={'slide-first__image'} src={sherifSlide} />
+                            <img className={'slide-first__image'} src={sherifSlide}/>
                         </div>
                     </div>
-                    <img className={'slide-first__cloud'} src={cloudSlideFirst} />
+                    <img className={'slide-first__cloud'} src={cloudSlideFirst}/>
                 </div>
             </div>
 
@@ -110,10 +110,10 @@ function App() {
                             <p className={'travel-first__desc'}>Дом находится на пересечении улиц Баумана и Кремлёвской.
                                 Купив билет, можно посмотреть на это историческое здание и его убранства, параллельно
                                 сделав много фото для ваших соцсетей.</p>
-                            <img alt={'arrow'} className={'travel-first__arrow'} src={arrowDown} />
+                            <img alt={'arrow'} className={'travel-first__arrow'} src={arrowDown}/>
                         </div>
                         <div>
-                            <img alt={'image'} className={'travel-first__image'} src={houseYshahova} />
+                            <img alt={'image'} className={'travel-first__image'} src={houseYshahova}/>
                             <p className={'travel-first__address'}>Дом Ушковой Кремлёвская ул., 33, Казань</p>
                         </div>
                     </div>
@@ -121,7 +121,7 @@ function App() {
                         где проводят выставки</p>
                     <div className={'travel-second'}>
                         <div>
-                            <img className={'travel-second__image'} alt={'nation library'} src={nationLibrary} />
+                            <img className={'travel-second__image'} alt={'nation library'} src={nationLibrary}/>
                             <p className={'travel-second__address'}>Национальная библиотека ул. Пушкина, 86, Казань</p>
                         </div>
                         <div>
@@ -140,14 +140,14 @@ function App() {
                                 красивым видом на центр города, а так же блюдами </p>
                         </div>
                         <div>
-                            <img className={'travel-third__image'} alt={'restaurant'} src={restaurant} />
+                            <img className={'travel-third__image'} alt={'restaurant'} src={restaurant}/>
                             <p className={'travel-third__address'}>Лофт-ресторан на Крыше ул. Баумана, 82, Казань (этаж
                                 5)</p>
                         </div>
                     </div>
                     <div className={'travel-fourth'}>
                         <div>
-                            <img className={'travel-fourth__image'} src={kazan} alt={'kazan'} />
+                            <img className={'travel-fourth__image'} src={kazan} alt={'kazan'}/>
                             <p className={'travel-fourth__address'}>Центр семьи Казан ул. Сибгата Хакима, 4, Казань</p>
                         </div>
                         <div>
@@ -163,7 +163,7 @@ function App() {
                 </div>
             </div>
 
-            <img className={'line-left'} src={linesLeft} alt={'lines left'} />
+            <img className={'line-left'} src={linesLeft} alt={'lines left'}/>
             <div className={'container'}>
                 <p className={'popular__title'}>Популярные места</p>
                 <div className={'popular-content'}>
@@ -172,7 +172,7 @@ function App() {
             </div>
 
             <div className={'places-mobile'}>
-                    <p>Интересные кафешки для вашего настроения <img /></p>
+                <p>Интересные кафешки для вашего настроения <img/></p>
             </div>
 
             <div className={'container'}>
@@ -181,52 +181,52 @@ function App() {
                         <div>
                             <p className={'places-upper__text-upper'}>Интересные кафешки для</p>
                             <p className={'places-upper__text-down'}>вашего настроения <img src={arrowRightLong}
-                                alt={'arrow left'} /></p>
+                                                                                            alt={'arrow left'}/></p>
                         </div>
                         <div className={'places-upper__cards'}>
                             <div className={'places-card'}>
-                                <img src={cartLounge} alt={'cart lounge'} />
+                                <img src={cartLounge} alt={'cart lounge'}/>
                                 <div className={'places-card__down'}>
                                     <p>CART Lounge</p>
-                                    <p><img src={location} alt={'location'} />ул. 2-я Юго-Западная д.3А</p>
+                                    <p><img src={location} alt={'location'}/>ул. 2-я Юго-Западная д.3А</p>
                                 </div>
                             </div>
                             <div className={'places-card'}>
-                                <img src={meraKitchen} alt={'cart lounge'} />
+                                <img src={meraKitchen} alt={'cart lounge'}/>
                                 <div className={'places-card__down'}>
                                     <p>Mera kitchen</p>
-                                    <p><img src={location} alt={'location'} />ул. Разведчика Ахмерова, 7</p>
+                                    <p><img src={location} alt={'location'}/>ул. Разведчика Ахмерова, 7</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className={'places-down'}>
                         <div className={'places-card'}>
-                            <img src={azu} alt={'cart lounge'} />
+                            <img src={azu} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>AZU</p>
-                                <p><img src={location} alt={'location'} />ул. Декабристов, 8</p>
+                                <p><img src={location} alt={'location'}/>ул. Декабристов, 8</p>
                             </div>
                         </div>
                         <div className={'places-card'}>
-                            <img src={artel} alt={'cart lounge'} />
+                            <img src={artel} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>ARTEL</p>
-                                <p><img src={location} alt={'location'} />ул. Муштари, 18</p>
+                                <p><img src={location} alt={'location'}/>ул. Муштари, 18</p>
                             </div>
                         </div>
                         <div className={'places-card'}>
-                            <img src={vanGofh} alt={'cart lounge'} />
+                            <img src={vanGofh} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>Van Gofh</p>
-                                <p><img src={location} alt={'location'} />п. Ибрагимова, 56А, этаж 3</p>
+                                <p><img src={location} alt={'location'}/>п. Ибрагимова, 56А, этаж 3</p>
                             </div>
                         </div>
                         <div className={'places-card'}>
-                            <img src={cheeseria} alt={'cart lounge'} />
+                            <img src={cheeseria} alt={'cart lounge'}/>
                             <div className={'places-card__down'}>
                                 <p>Cheeseria</p>
-                                <p><img src={location} alt={'location'} />ул. Мусы Джалиля, 8/44</p>
+                                <p><img src={location} alt={'location'}/>ул. Мусы Джалиля, 8/44</p>
                             </div>
                         </div>
                     </div>
@@ -240,7 +240,7 @@ function App() {
                     вовсе зеленая</p>
                 <div className={'slob__line'}></div>
                 <div className={'slob-content'}>
-                    <img alt={'arrow'} src={arrowDown} />
+                    <img alt={'arrow'} src={arrowDown}/>
                     <p>Новую и Старую Татарские слободы Казани рекомендуют туристам во всех путеводителях: во-первых,
                         вокруг озера Кабан просто очень красиво, во-вторых, местные мечети — едва ли не единственные
                         сохранившиеся памятники монументальной татарской архитектуры в Казани.</p>
@@ -256,7 +256,7 @@ function App() {
                     <div className={'container'}>
                         <div className={'mosque-content'}>
                             <div className={'mosque-content__left'}>
-                                <img alt={'alMardjani'} src={alMardjani} />
+                                <img alt={'alMardjani'} src={alMardjani}/>
                                 <p>ул. К. Насыри, 17</p>
                             </div>
                             <div className={'mosque-content__right'}>
@@ -289,10 +289,10 @@ function App() {
                             </div>
                             <div className={'apanaev-content__right'}>
                                 <div>
-                                    <img alt={'apanaevLeft'} src={apanaevLeft} />
-                                    <img alt={'apanaevRight'} src={apanaevRight} />
+                                    <img alt={'apanaevLeft'} src={apanaevLeft}/>
+                                    <img alt={'apanaevRight'} src={apanaevRight}/>
                                 </div>
-                                <img alt={'apanaevDown'} src={apanaevDown} />
+                                <img alt={'apanaevDown'} src={apanaevDown}/>
                                 <p>ул. К. Насыри, 27</p>
                             </div>
                         </div>
@@ -319,8 +319,8 @@ function App() {
                                     закрыли в 1930 году.</p>
                             </div>
                             <div className={'zakaban-content__right'}>
-                                <img alt={'zakaban image'} src={zakabanUpper} />
-                                <img alt={'zakaban image'} src={zakabanDown} />
+                                <img alt={'zakaban image'} src={zakabanUpper}/>
+                                <img alt={'zakaban image'} src={zakabanDown}/>
                                 <p>ул. Х. Такташа, 26</p>
                             </div>
                         </div>
@@ -342,15 +342,17 @@ function App() {
                                     помощи технологии Cinema 360 изображения проецируют на стены и пол, их сопровождает
                                     музыка и голос диктора.</p>
                                 <p className={'artplay-content__left-point-first'}><img alt={'location'}
-                                    src={locationBlack} /> ул.
+                                                                                        src={locationBlack}/> ул.
                                     Пушкина, 17</p>
-                                <p className={'artplay-content__left-point'}><img alt={'point'} src={pointC} /> с 10:00
+                                <p className={'artplay-content__left-point'}><img alt={'point'} src={pointC}/> с 10:00
                                     до 21:00, в пятницу и субботу — до 22:00</p>
-                                <p className={'artplay-content__left-point'}><img alt={'cost'} src={cost} /> от 600 ₽</p>
+                                <p className={'artplay-content__left-point'}><img alt={'cost'} src={cost}/> от 600 ₽</p>
                             </div>
                             <div className={'artplay-content__right'}>
                                 <p>Центр цифрового искусства Artplay Media</p>
-                                <img alt={'artplay'} src={artplay} />
+                                <p className={'artplay-content__left-title-mobile'}>Мультимедийные выставки с «ожившими»
+                                    полотнами</p>
+                                <img alt={'artplay'} src={artplay}/>
                             </div>
                         </div>
                     </div>
@@ -359,7 +361,23 @@ function App() {
 
             <div className={'container'}>
                 <div className={'flowers'}>
-                    <img alt={'white flowers'} src={whiteFlowers} />
+                    <div className={'flowers-mobile'}>
+                        <p className={'flowers-right__title'}>Бульвар «Белые цветы»</p>
+                        <div className={'flowers-right__subtitle'}>
+                            <p>Бульвар с классным стрит-артом и детскими площадками</p>
+                        </div>
+                        <img className={'flowers-mobile__image'} alt={'white flowers'} src={whiteFlowers}/>
+                        <p className={'flowers-right__desc'}>
+                            Это место посвящено роману «Ак чәчәкләр» — «Белые цветы». В честь его автора Абдурахмана
+                            Абсалямова названа улица, вдоль которой расположен 700-метровый бульвар.
+                        </p>
+                        <p className={'flowers-right__point'}><img alt={'location'} src={locationBlack}/> ул.
+                            Пушкина, 17</p>
+                        <p className={'flowers-right__other'}><img alt={'point'} src={pointC}/> круглосуточно</p>
+                        <p className={'flowers-right__other'}><img alt={'cost'} src={cost}/> бесплатно</p>
+
+                    </div>
+                    <img alt={'white flowers'} src={whiteFlowers}/>
                     <div className={'flowers-right'}>
                         <p className={'flowers-right__title'}>Бульвар «Белые цветы»</p>
                         <div className={'flowers-right__subtitle'}>
@@ -369,18 +387,24 @@ function App() {
                             Это место посвящено роману «Ак чәчәкләр» — «Белые цветы». В честь его автора Абдурахмана
                             Абсалямова названа улица, вдоль которой расположен 700-метровый бульвар.
                         </p>
-                        <p className={'flowers-right__point'}><img alt={'location'} src={locationBlack} /> ул.
+                        <p className={'flowers-right__point'}><img alt={'location'} src={locationBlack}/> ул.
                             Пушкина, 17</p>
-                        <p className={'flowers-right__other'}><img alt={'point'} src={pointC} /> круглосуточно</p>
-                        <p className={'flowers-right__other'}><img alt={'cost'} src={cost} /> бесплатно</p>
+                        <p className={'flowers-right__other'}><img alt={'point'} src={pointC}/> круглосуточно</p>
+                        <p className={'flowers-right__other'}><img alt={'cost'} src={cost}/> бесплатно</p>
                     </div>
                 </div>
             </div>
 
             <div className={'park'}>
-                <img className={'park__image'} alt={'it park'} src={itPark} />
+                <p className={'park-mobile__title'}>ИТ-парк имени Башира Рамеева</p>
+                <p className={'park-mobile__subtitle'}>Огромное здание с киберареной, аналоговой
+                    стеной для рисования и роботизированным роялем</p>
+                <img className={'park__image'} alt={'it park'} src={itPark}/>
                 <div className={'container'}>
                     <div className={'park-content'}>
+                        <div className={'park-mobile__image'}>
+                            <img alt={'it park'} src={itPark}/>
+                        </div>
                         <div className={'park-content__left'}>
                             <p className={'park-content__left-title'}>ИТ-парк имени Башира Рамеева</p>
                             <p className={'park-content__left-subtitle'}>Огромное здание с киберареной, аналоговой
@@ -390,11 +414,11 @@ function App() {
                             <p className={'park-content__right-desc'}>Парк напоминает город в городе: внутри есть кафе,
                                 барбершоп, фитнес-зал, химчистка и коворкинги. Доступ в здание открыт для всех, а не
                                 только для сотрудников компаний-резидентов.</p>
-                            <p className={'park-content__right-address'}><img src={locationBlack} alt={'location'} /> ул.
+                            <p className={'park-content__right-address'}><img src={locationBlack} alt={'location'}/> ул.
                                 Спартаковская, 2</p>
-                            <p className={'park-content__right-point'}><img src={pointC} alt={'point'} /> круглосуточно
+                            <p className={'park-content__right-point'}><img src={pointC} alt={'point'}/> круглосуточно
                             </p>
-                            <p className={'park-content__right-point'}><img src={cost} alt={'cost'} /> ИТ-парк —
+                            <p className={'park-content__right-point'}><img src={cost} alt={'cost'}/> ИТ-парк —
                                 бесплатно, киберарена — от 80 ₽ в час</p>
                             <p className={'park-content__right-info'}>Если хотите попасть во все помещения, нужно
                                 записаться на экскурсию <a
@@ -409,15 +433,86 @@ function App() {
             <div className={'container'}>
                 <div className={'event'}>
                     <p className={'event__title'}>Чем заняться в Казани</p>
+                    <div className={'event-mobile'}>
+                        <div className={'event-mobile__item'}>
+                            <img src={star} alt={'start'}/>
+                            <div>
+                                <p className={'event-mobile__item-date'}>С 25 декабря по 25 февраля</p>
+                                <p className={'event-mobile__item-desc'}>Мультимедийная выставка — «Леонардо да Винчи.
+                                    Тайна Гения»</p>
+                                <p className={'event-mobile__item-cost'}>Стоимость билетов: <br/>
+                                    600 - 800 рублей</p>
+                                <p className={'event-mobile__item-address'}>Адрес: <br/>
+                                    улица Пушкина,17</p>
+                            </div>
+                        </div>
+                        <div className={'event-mobile__item'}>
+                            <img src={star} alt={'start'}/>
+                            <div>
+                                <p className={'event-mobile__item-date'}>27 и 28 января в 13:30</p>
+                                <p className={'event-mobile__item-desc'}>Мастер-класс: рисуем лавандовое поле маслом</p>
+                                <p className={'event-mobile__item-cost'}>Стоимость билетов: <br/>
+                                    бесплатно</p>
+                                <p className={'event-mobile__item-address'}>Адрес: <br/>
+                                    улица Академика Королёва,47</p>
+                            </div>
+                        </div>
+                        <div className={'event-mobile__item'}>
+                            <img src={star} alt={'start'}/>
+                            <div>
+                                <p className={'event-mobile__item-date'}>7 февраля, среда, 19:00</p>
+                                <p className={'event-mobile__item-desc'}>Cinema Medley: Hans Zimmer’s Universe
+                                    Грандиозное симфоническое шоу саундтреков</p>
+                                <p className={'event-mobile__item-cost'}>Стоимость билетов: <br/>
+                                    от 1200 руб.</p>
+                                <p className={'event-mobile__item-address'}>Адрес: <br/>
+                                    Татнефть-Арена</p>
+                            </div>
+                        </div>
+                        <div className={'event-mobile__item'}>
+                            <img src={star} alt={'start'}/>
+                            <div>
+                                <p className={'event-mobile__item-date'}>2 марта, суббота, 18:00</p>
+                                <p className={'event-mobile__item-desc'}>Концерт Оркестр CAGMO. K-pop Symphony: BTS</p>
+                                <p className={'event-mobile__item-cost'}>Стоимость билетов: <br/>
+                                    от 1200 руб.</p>
+                                <p className={'event-mobile__item-address'}>Адрес: <br/>
+                                    Татнефть-Арена</p>
+                            </div>
+                        </div>
+                        <div className={'event-mobile__item'}>
+                            <img src={star} alt={'start'}/>
+                            <div>
+                                <p className={'event-mobile__item-date'}>9 марта, суббота, 19:00</p>
+                                <p className={'event-mobile__item-desc'}>Концерт Аффинаж
+                                    Общество с ограниченной ответственностью</p>
+                                <p className={'event-mobile__item-cost'}>Стоимость билетов: <br/>
+                                    от 1200 руб.</p>
+                                <p className={'event-mobile__item-address'}>Адрес: <br/>
+                                    улица Академика Королёва,47</p>
+                            </div>
+                        </div>
+                        <div className={'event-mobile__item'}>
+                            <img src={star} alt={'start'}/>
+                            <div>
+                                <p className={'event-mobile__item-date'}>11 марта, понедельник, 19:00</p>
+                                <p className={'event-mobile__item-desc'}>Concord Orchestra. Симфонические хиты. Властелин тьм</p>
+                                <p className={'event-mobile__item-cost'}>Стоимость билетов: <br/>
+                                    от 1200 руб.</p>
+                                <p className={'event-mobile__item-address'}>Адрес: <br/>
+                                    КРК Пирамида</p>
+                            </div>
+                        </div>
+                    </div>
                     <div className={'event-content'}>
                         <div className={'event-item'}>
                             <div>
-                                <img className={'event-item__image'} src={star} alt={'star'} />
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
                                 <div className={'event-item__info'}>
                                     <p>С 25 декабря по 25 февраля</p>
                                     <div>
                                         <p>Стоимость билетов: 600 - 800 рублей</p>
-                                        <p>Адрес:<br /> улица Пушкина,17</p>
+                                        <p>Адрес:<br/> улица Пушкина,17</p>
                                     </div>
                                 </div>
                             </div>
@@ -426,13 +521,13 @@ function App() {
                         </div>
                         <div className={'event-item'}>
                             <div>
-                                <img className={'event-item__image'} src={star} alt={'star'} />
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
                                 <div className={'event-item__info'}>
                                     <p>27 и 28 января в 13:30</p>
                                     <div>
                                         <p>Стоимость билетов:
                                             бесплатно</p>
-                                        <p>Адрес: <br />
+                                        <p>Адрес: <br/>
                                             улица Академика Королёва,47</p>
                                     </div>
                                 </div>
@@ -441,13 +536,13 @@ function App() {
                         </div>
                         <div className={'event-item'}>
                             <div>
-                                <img className={'event-item__image'} src={star} alt={'star'} />
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
                                 <div className={'event-item__info'}>
                                     <p>7 февраля, среда, 19:00</p>
                                     <div>
                                         <p>Стоимость билетов:
                                             от 1200 руб.</p>
-                                        <p>Адрес: <br />
+                                        <p>Адрес: <br/>
                                             Татнефть-Арена</p>
                                     </div>
                                 </div>
@@ -456,17 +551,17 @@ function App() {
                                 Грандиозное симфоническое шоу саундтреков</p>
                         </div>
                     </div>
-                    <img className={'line-right'} src={linesRight} alt={'linesRight'} />
+                    <img className={'line-right'} src={linesRight} alt={'linesRight'}/>
                     <div className={'event-content-revers'}>
                         <div className={'event-item-revers'}>
                             <div>
-                                <img className={'event-item__image'} src={star} alt={'star'} />
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
                                 <div className={'event-item__info'}>
                                     <p>2 марта, суббота, 18:00</p>
                                     <div>
                                         <p>Стоимость билетов:
                                             от 1200 руб.</p>
-                                        <p>Адрес: <br />
+                                        <p>Адрес: <br/>
                                             Татнефть-Арена</p>
                                     </div>
                                 </div>
@@ -475,13 +570,13 @@ function App() {
                         </div>
                         <div className={'event-item-revers'}>
                             <div>
-                                <img className={'event-item__image'} src={star} alt={'star'} />
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
                                 <div className={'event-item__info'}>
                                     <p>9 марта, суббота, 19:00</p>
                                     <div>
                                         <p>Стоимость билетов:
                                             от 1200 руб.</p>
-                                        <p>Адрес: <br />
+                                        <p>Адрес: <br/>
                                             улица Академика Королёва,47</p>
                                     </div>
                                 </div>
@@ -491,13 +586,13 @@ function App() {
                         </div>
                         <div className={'event-item-revers'}>
                             <div>
-                                <img className={'event-item__image'} src={star} alt={'star'} />
+                                <img className={'event-item__image'} src={star} alt={'star'}/>
                                 <div className={'event-item__info'}>
                                     <p>11 марта, понедельник, 19:00</p>
                                     <div>
                                         <p>Стоимость билетов:
                                             от 1200 руб.</p>
-                                        <p>Адрес:<br />
+                                        <p>Адрес:<br/>
                                             КРК Пирамида</p>
                                     </div>
                                 </div>
@@ -510,15 +605,15 @@ function App() {
 
             <div className={'container'}>
                 <div className={'form'}>
-                    <div>
-                        <img src={formCloud} alt={'cloud'} />
+                    <div className={'form-left'}>
+                        <img src={formCloud} alt={'cloud'}/>
                     </div>
                     <div className={'form-right'}>
                         <p className={'form-right__title'}>Путеводитель по Казани</p>
                         <p className={'form-right__subtitle'}>Заполните форму и мы с вами свяжемся</p>
                         <div className={'form-right__inputs'}>
-                            <input placeholder={'Имя'} />
-                            <input placeholder={'E-mail'} />
+                            <input placeholder={'Имя'}/>
+                            <input placeholder={'E-mail'}/>
                         </div>
                         <div className={'form-right__button'}>
                             <button>Отправить</button>
@@ -530,7 +625,7 @@ function App() {
                 <div className={"footer"}>
                     <div className={"footer-upper"}>
                         <div className={"footer-upper__left"}>
-                            <img alt={"logo"} src={logo} />
+                            <img alt={"logo"} src={logo}/>
                             <a>KazanTrip</a>
                         </div>
                         <div className={"footer-upper__right"}>
@@ -544,8 +639,8 @@ function App() {
                             <p>© Все права защищены</p>
                         </div>
                         <div className={"footer-down__right"}>
-                            <a><img alt={"vk.com"} src={vk} /></a>
-                            <a><img src={insta} alt={"instagram"} /></a>
+                            <a><img alt={"vk.com"} src={vk}/></a>
+                            <a><img src={insta} alt={"instagram"}/></a>
                             <a href={"mailto:kazanTrip@gmail.com"}>kazanTrip@gmail.com</a>
                         </div>
                     </div>
