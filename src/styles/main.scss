@@ -251,6 +251,7 @@ body {
     font-weight: 500;
     font-size: 28px;
     color: #000;
+
   }
 
   &-first {
@@ -1163,7 +1164,8 @@ body {
 
   &-left {
     display: block;
-    & img{
+
+    & img {
       height: 100%;
     }
   }
@@ -1246,13 +1248,14 @@ body {
   margin-top: 200px;
   margin-bottom: 67px;
 
-  &-mobile{
+  &-mobile {
     display: none;
 
-    &__alright{
+    &__alright {
       display: none;
     }
   }
+
   &-upper {
     display: flex;
     justify-content: space-between;
@@ -1968,6 +1971,7 @@ body {
       font-size: 14px;
       margin-top: 50px;
       padding: 0 30px;
+      width: 100%;
     }
 
     &-fourth {
@@ -2009,12 +2013,14 @@ body {
         font-size: 14px;
         margin-top: 30px;
         margin-left: 0;
+        width: 100%;
         text-align: center;
       }
 
       &__quote {
         font-size: 14px;
         margin-top: 14px;
+        width: 100%;
         margin-left: 0;
         text-align: center;
       }
@@ -2054,6 +2060,7 @@ body {
         font-size: 14px;
         text-align: center;
         margin-left: 0;
+        width: 100%;
       }
 
       &__image {
@@ -2210,7 +2217,7 @@ body {
         text-decoration: none;
       }
 
-      &__alright{
+      &__alright {
         padding-left: 50px;
         font-family: "Kanit", sans-serif;
         font-size: 8px;
@@ -2244,6 +2251,93 @@ body {
 
     &-down {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+
+  .block-mobile__title{
+    max-width: 370px;
+  }
+  .container {
+    max-width: 425px;
+  }
+
+  .park{
+    &-content{
+      &__right{
+        margin-top: 70px;
+      }
+    }
+
+    &-mobile{
+      &__image{
+        & img{
+          margin-top: -60px;
+        }
+      }
+    }
+  }
+
+  .apanaev{
+
+    &-content{
+      &__right{
+        & div{
+          & img{
+            width: 47.5%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .block-mobile__title{
+    max-width: 320px;
+  }
+
+  .park-content__right{
+    margin-top: 60px;
+  }
+
+  .apanaev{
+
+    &-content{
+      &__right{
+        & div{
+          & img{
+            width: 46.5%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .block-mobile__title{
+    max-width: 270px;
+  }
+
+  .apanaev{
+
+    &-content{
+      &__right{
+        & div{
+          & img{
+            width: 46%;
+          }
+        }
+      }
     }
   }
 }
