@@ -1,7 +1,4 @@
 import './styles/main.scss'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
-import 'swiper/css/navigation';
 
 // components
 import { HeaderCarousel } from './carousels/HeaderCarousel.jsx';
@@ -45,14 +42,30 @@ import kazanText from './images/kazanText.png'
 // import kazanBg from './images/kazanBg.png'
 import arrowDownWhite from './images/arrowDownWhite.svg'
 import arrowRightDown from './images/arrowRightDown.svg'
+import {useState} from "react";
 
 function App() {
 
+    const [modal, setModal] = useState(false)
+
     return (
         <div>
+            <div className={modal ? 'modal' : ''} style={!modal ? {display: 'none'} : {display: "flex"}}>
+                <div className={'modal-content'}>
+                    <div className={'modal-content__close'}>
+                        <button onClick={() => setModal(false)}>X</button>
+                    </div>
+                    <div>
+                        <a>Главная</a>
+                        <a>О нас</a>
+                        <a>Места</a>
+                        <a>Популярное</a>
+                    </div>
+                </div>
+            </div>
             <div className={'header-mobile'}>
                 <a><img src={logo} alt={'logo'}/> KazanTrip</a>
-                <button>
+                <button onClick={() => setModal(modal ? false : true)}>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -67,7 +80,7 @@ function App() {
                             <a href="">Места</a>
                             <a href="">Популярное</a>
                         </div>
-                        <a className={"header-content__right"}>
+                        <a href={'/'} className={"header-content__right"}>
                             <img src={logo} alt={'logo'}/>
                             KazanTrip
                         </a>
@@ -75,7 +88,7 @@ function App() {
                 </div>
             </div>
 
-            <div className={'block-mobile'}>
+            <div className={'block-mobile'} >
                 <img className={'block-mobile__title'} src={kazanText} alt='kazan text'/>
                 <div className={'block-mobile__bg'}></div>
                 <img className={'block-mobile__arrow'} src={arrowDownWhite} alt='arrow'/>
