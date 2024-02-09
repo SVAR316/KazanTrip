@@ -56,10 +56,10 @@ function App() {
                         <button onClick={() => setModal(false)}>X</button>
                     </div>
                     <div>
-                        <a>Главная</a>
-                        <a>О нас</a>
-                        <a>Места</a>
-                        <a>Популярное</a>
+                        <a onClick={() => setModal(false)} href={"#main"}>Главная</a>
+                        <a onClick={() => setModal(false)}>О нас</a>
+                        <a onClick={() => setModal(false)} href={"#places"}>Места</a>
+                        <a onClick={() => setModal(false)} href={"#popular"}>Популярное</a>
                     </div>
                 </div>
             </div>
@@ -75,10 +75,10 @@ function App() {
                 <div className={'container'}>
                     <div className={'header-content'}>
                         <div className={'header-content__left'}>
-                            <a>Главная</a>
+                            <a href={"#main"}>Главная</a>
                             <a href="">О нас</a>
-                            <a href="">Места</a>
-                            <a href="">Популярное</a>
+                            <a href={"#places"}>Места</a>
+                            <a href={"#popular"}>Популярное</a>
                         </div>
                         <a href={'/'} className={"header-content__right"}>
                             <img src={logo} alt={'logo'}/>
@@ -98,7 +98,7 @@ function App() {
 
 
             <div className={'container'}>
-                <div className={'travel'}>
+                <div id={'main'} className={'travel'}>
                     <p className={'travel__title'}>За 1 день можно пройти 4 локации</p>
                     <div className={'travel-first'}>
                         <div>
@@ -162,7 +162,7 @@ function App() {
 
             <img className={'line-left'} src={linesLeft} alt={'lines left'}/>
             <div className={'container'}>
-                <p className={'popular__title'}>Популярные места</p>
+                <p id={"places"} className={'popular__title'}>Популярные места</p>
                 </div>
                 <div className={'popular-content'}>
                                 <PopularCarousel />
@@ -433,7 +433,7 @@ function App() {
             </div>
 
             <div className={'container'}>
-                <div className={'event'}>
+                <div id={"popular"} className={'event'}>
                     <p className={'event__title'}>Чем заняться в Казани</p>
                     <div className={'event-mobile'}>
                         <div className={'event-mobile__item'}>
