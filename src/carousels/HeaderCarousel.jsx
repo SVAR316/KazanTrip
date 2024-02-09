@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 import sherifSlide from '../images/kyl-sherif.png'
 import cloudSlideFirst from '../images/back-cloud.png'
@@ -15,7 +16,14 @@ export function HeaderCarousel() {
     
     return (
         <div>
-            <Swiper >
+            <Swiper
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                navigation={true}
+                modules={[Autoplay, Navigation]}
+            >
                 <SwiperSlide>
                     <div className={'carousel'}>
                         <div className={'sharif'}>
