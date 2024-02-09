@@ -42,11 +42,16 @@ import kazanText from './images/kazanText.png'
 // import kazanBg from './images/kazanBg.png'
 import arrowDownWhite from './images/arrowDownWhite.svg'
 import arrowRightDown from './images/arrowRightDown.svg'
+import lineRightMobile from './images/lineRightMobile.png'
+import lineLeftMobile from './images/lineLeftMobile.png'
 import {useState} from "react";
 
 function App() {
 
     const [modal, setModal] = useState(false)
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
 
     return (
         <div>
@@ -167,7 +172,8 @@ function App() {
                 <div className={'popular-content'}>
                                 <PopularCarousel />
                 </div>
-        
+
+            <img className={'line-mobile__left'} src={lineRightMobile} />
 
             <div className={'places-mobile'}>
                 <p className={'places-mobile__title'}>Интересные кафешки для вашего настроения <img src={arrowRightDown} /></p>
@@ -554,6 +560,7 @@ function App() {
                         </div>
                     </div>
                     <img className={'line-right'} src={linesRight} alt={'linesRight'}/>
+                    <img className={'line-mobile__right'} src={lineLeftMobile} />
                     <div className={'event-content-revers'}>
                         <div className={'event-item-revers'}>
                             <div>
@@ -614,11 +621,11 @@ function App() {
                         <p className={'form-right__title'}>Путеводитель по Казани</p>
                         <p className={'form-right__subtitle'}>Заполните форму и мы с вами свяжемся</p>
                         <div className={'form-right__inputs'}>
-                            <input placeholder={'Имя'}/>
-                            <input placeholder={'E-mail'}/>
+                            <input placeholder={'Имя'} value={name} onChange={(e) => setName(e.target.value)}/>
+                            <input placeholder={'E-mail'} value={email} onChange={(e) => setEmail(e.target.value)}/>
                         </div>
                         <div className={'form-right__button'}>
-                            <button>Отправить</button>
+                            <button onClick={() => name.length != 0 && email.length != 0 ? alert('Данные отправлены') : alert("Необходимо ввести данные в поля")}>Отправить</button>
                         </div>
                     </div>
                 </div>

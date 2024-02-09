@@ -1582,6 +1582,7 @@ body {
         font-weight: 700;
         font-size: 24px;
         background-color: white;
+        cursor: pointer;
       }
     }
   }
@@ -1682,6 +1683,14 @@ body {
 }
 
 .line {
+  &-mobile{
+    &__left{
+      display: none;
+    }
+    &__right{
+      display: none;
+    }
+  }
   &-right {
     position: absolute;
     z-index: -1;
@@ -1710,6 +1719,22 @@ body {
 
 @media (max-width: 769px) {
   .line {
+    &-mobile{
+      &__left{
+        display: block;
+        position: absolute;
+        z-index: -1000;
+        width: 100%;
+        margin-top: -650px;
+      }
+      &__right{
+        display: block;
+        position: absolute;
+        z-index: -1000;
+        width: 100%;
+        margin-top: -1350px;
+      }
+    }
     &-right {
       display: none;
     }
@@ -1723,7 +1748,7 @@ body {
     display: block;
 
     & .swiper{
-      height: 280px;
+      height: 452px;
     }
     & .swiper-button-prev{
       left: 36% !important;
@@ -2705,6 +2730,31 @@ body {
     max-width: 425px;
   }
 
+  .line{
+    &-mobile{
+      &__left{
+        display: block;
+        position: absolute;
+        z-index: -1000;
+        width: 100%;
+        margin-top: -650px;
+      }
+      &__right{
+        display: block;
+        position: absolute;
+        z-index: -1000;
+        width: 100%;
+        margin-top: -1350px;
+      }
+    }
+  }
+
+  .places-mobile-content {
+
+    & .swiper {
+      height: 280px;
+    }
+  }
   .places-card {
     width: 176px;
     height: 176px;
@@ -2783,6 +2833,12 @@ body {
 }
 
 @media (max-width: 376px) {
+  .line-mobile__left{
+    display: none;
+  }
+  .line-mobile__right{
+    display: none;
+  }
   .places-mobile__title {
     & img {
       margin-right: 70px;
