@@ -9,6 +9,7 @@ import artel from '../images/artel.png'
 import vanGofh from '../images/vanGofh.png'
 import cheeseria from '../images/cheeseria.png'
 import location from '../images/location.svg'
+import {Navigation} from "swiper/modules";
 
 export function PlacesCarousel() {
 
@@ -18,7 +19,9 @@ export function PlacesCarousel() {
                 slidesPerView={"auto"}
                 spaceBetween={25}
                 grabCursor={true}
-                centeredSlides={true}>
+                centeredSlides={true}
+                navigation={true}
+                modules={[Navigation]}>
                 <SwiperSlide>
                     <div className={'places-card'}>
                         <img src={cartLounge} alt={'cart lounge'} />

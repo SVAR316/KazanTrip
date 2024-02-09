@@ -3,6 +3,16 @@
         width: 557px !important;
     }
 
+    & .swiper{
+        height: 740px;
+    }
+    & .swiper-button-prev{
+        left: 13% !important;
+    }
+    & .swiper-button-next{
+        left: 19% !important;
+    }
+
     &-item {
 
         padding: 50px 28px 45px 28px;
@@ -64,6 +74,16 @@
     }
     &-mobile{
         display: none;
+
+        & .swiper{
+            height: 470px;
+        }
+        & .swiper-button-prev{
+            left: 36% !important;
+        }
+        & .swiper-button-next{
+            left: 66% !important;
+        }
     }
 }
 

@@ -1721,6 +1721,16 @@ body {
 
   .places-mobile-content {
     display: block;
+
+    & .swiper{
+      height: 280px;
+    }
+    & .swiper-button-prev{
+      left: 36% !important;
+    }
+    & .swiper-button-next{
+      left: 66% !important;
+    }
   }
 
   .container {
@@ -2704,7 +2714,7 @@ body {
 
     &__down {
       padding: 10px 20px;
-      margin-top: -77px;
+      margin-top: -81px;
       height: 77px;
 
       & p {

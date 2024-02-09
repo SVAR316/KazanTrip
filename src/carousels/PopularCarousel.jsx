@@ -1,7 +1,9 @@
 import {Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
+
 import 'swiper/css/navigation';
 import '../styles/popular.scss'
+import {Autoplay, Navigation} from 'swiper/modules';
 
 import kremNab from '../images/kremNab.png'
 import popularShrif from '../images/popularSharif.png'
@@ -22,7 +24,9 @@ export function PopularCarousel() {
                 slidesPerView={"auto"}
                 spaceBetween={50}
                 grabCursor={true}
-                centeredSlides={true}>
+                centeredSlides={true}
+                navigation={true}
+                modules={[Navigation]}>
                 <SwiperSlide>
                     <div className={'popular-item'}>
                         <img src={popularShrif} />
@@ -129,7 +133,9 @@ export function PopularCarousel() {
                 slidesPerView={4}
                 spaceBetween={50}
                 grabCursor={true}
-                centeredSlides={true}>
+                centeredSlides={true}
+                navigation={true}
+                modules={[Navigation]}>
                 <SwiperSlide>
                     <div className={'popular-item'}>
                         <img src={popularShrif} />
