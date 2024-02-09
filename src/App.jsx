@@ -1,11 +1,17 @@
 import './styles/main.scss'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// components
+import { HeaderCarousel } from './carousels/HeaderCarousel.jsx';
+import { PlacesCarousel } from './carousels/PlacesCarousel.jsx'
+import { PopularCarousel } from './carousels/PopularCarousel.jsx';
 
 // imgs
 import logo from './images/logo.svg'
 import vk from './images/vk.svg'
 import insta from './images/instagram.svg'
-import sherifSlide from './images/kyl-sherif.png'
-import cloudSlideFirst from './images/back-cloud.png'
 import arrowDown from './images/arrowDown.svg'
 import houseYshahova from './images/houseYshahova.png'
 import nationLibrary from './images/nationLibrary.png'
@@ -38,6 +44,7 @@ import linesLeft from './images/linesLeft.png'
 import kazanText from './images/kazanText.png'
 // import kazanBg from './images/kazanBg.png'
 import arrowDownWhite from './images/arrowDownWhite.svg'
+import arrowRightDown from './images/arrowRightDown.svg'
 
 function App() {
 
@@ -73,32 +80,9 @@ function App() {
                 <div className={'block-mobile__bg'}></div>
                 <img className={'block-mobile__arrow'} src={arrowDownWhite} alt='arrow'/>
             </div>
+    
+                <HeaderCarousel />
 
-            <div className={'carousel'}>
-                <div className={'slide'}>
-                    <div className={'container'}>
-                        <div className={'slide-first'}>
-                            <div className={'slide-first__upper'}>
-                                <p className={'slide-first__counter'}>01</p>
-                                <p className={'slide-first__slash'}>/</p>
-                                <p className={'slide-first__max'}>04</p>
-                            </div>
-                            <div className={'slide-first__text'}>
-                                <p className={'slide-first__address'}>ул. Сибгата Хакима, 4</p>
-                                <p className={'slide-first__name'}>МЕЧЕТЬ КУЛ-ШАРИФ</p>
-                            </div>
-                            <div className={'slide-first__desc'}>
-                                <p>Символ столицы Татарстана и ее главный открыточный вид<br/> — мечеть Кул-Шариф</p>
-                                <p>Здание мечети облицовано белым мрамором, купол и вершины минаретов имеют окраску
-                                    бирюзового цвета. Фасад главного здания украшен бронзовыми металлическими надписями
-                                    арабской вязью</p>
-                            </div>
-                            <img className={'slide-first__image'} src={sherifSlide}/>
-                        </div>
-                    </div>
-                    <img className={'slide-first__cloud'} src={cloudSlideFirst}/>
-                </div>
-            </div>
 
             <div className={'container'}>
                 <div className={'travel'}>
@@ -166,13 +150,18 @@ function App() {
             <img className={'line-left'} src={linesLeft} alt={'lines left'}/>
             <div className={'container'}>
                 <p className={'popular__title'}>Популярные места</p>
-                <div className={'popular-content'}>
-
                 </div>
-            </div>
+                <div className={'popular-content'}>
+                                <PopularCarousel />
+                </div>
+        
 
             <div className={'places-mobile'}>
-                <p>Интересные кафешки для вашего настроения <img/></p>
+                <p className={'places-mobile__title'}>Интересные кафешки для вашего настроения <img src={arrowRightDown} /></p>
+            </div>
+
+            <div className='places-mobile-content'>
+                                <PlacesCarousel />
             </div>
 
             <div className={'container'}>

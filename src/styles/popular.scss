@@ -1,0 +1,113 @@
+.popular {
+    & .swiper-slide {
+        width: 557px !important;
+    }
+
+    &-item {
+
+        padding: 50px 28px 45px 28px;
+        border: 1px solid #535353;
+        border-radius: 40px;
+        height: 623px;
+
+        & img {
+            z-index: -10;
+            position: relative;
+            width: 100%;
+            height: 370px;
+            border-radius: 40px;
+        }
+
+        &__text {
+            background-color: #00000078;
+            width: 100%;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            margin-top: -114px;
+
+            & p {
+                color: white;
+                font-family: 'Kanit', sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+                padding: 32px 30px;
+
+            }
+        }
+
+        &__title {
+            font-family: 'Kanit', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #1e1e1e;
+            margin-top: 40px;
+
+            & span {
+                opacity: 0;
+            }
+        }
+
+        &__line {
+            height: 2px;
+            width: 92px;
+            background-color: #303030;
+            margin-top: 25px;
+        }
+
+        &__address {
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: #1e1e1e;
+            margin-top: 25px;
+        }
+    }
+    &-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+
+
+    .popular {
+        display: none;
+
+        &-mobile {
+            display: block;
+            & .swiper-slide {
+                    width: 240px !important;
+                }
+        }
+        
+
+        &-item {
+            height: 357px;
+            padding: 20px;
+
+            & img{
+                width: 200px;
+                height: 200px;
+            }
+        
+            &__text{
+                margin-top: -66px;
+                & p{
+                    font-size: 14px;
+                    padding: 20px 10px;
+                }
+            }
+            &__title{
+                font-size: 11px;
+                margin-top: 20px;
+            }
+            &__line{
+                margin-top: 20px;
+            }
+            &__address{
+                margin-top: 20px;
+                font-size: 10px;
+            }
+        }
+    }
+}
